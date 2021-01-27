@@ -9,8 +9,12 @@ alert('stay in touch with us')
 
 
 // next component will ask you about your email and age.
+
+var yourName = prompt('what is your name');
+alert('hello' + yourName);
 var email = prompt('what is your email');
 alert('accepted' + email);
+
 
 
 var age = prompt('how old are you?')
@@ -24,6 +28,12 @@ if (age > 18 ) { message = 'welcome to our coding website';}
 
 document.write('<h1>' + message + '<h1>');
 
+
+
+
+
+   
+   
 
 
 
