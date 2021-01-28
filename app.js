@@ -36,10 +36,10 @@ while (order !== "html" && order !== "css")
 
 var lang = '';
 if (order === 'html') {
-   lang = '<img src="images/html.jpg" />';
+   lang = '<img src="images/html.jpg"/>';
 }
 else if (order === 'css') {
-    lang = '<img src="images/css.jpg" />';  
+    lang = '<img src="images/css.jpg" width="250" />';  
    }
 
 
