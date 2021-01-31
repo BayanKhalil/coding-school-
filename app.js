@@ -16,42 +16,51 @@
 // alert('accepted' + email);
 
 
+function confirmingDependingOnAges(){
+var age = prompt('how old are you?')
+console.log(age); // this is for "to see the value in colone tap in"
 
-// var age = prompt('how old are you?')
-// console.log(age); // this is for "to see the value in colone tap in"
+if (age > 18 ) { message = 'welcome to our coding website';}
 
-// if (age > 18 ) { message = 'welcome to our coding website';}
+   else if (age <18 ) { message = 'go to school';}
 
-//    else if (age <18 ) { message = 'go to school';}
+   else { message = 'always welcome';}
 
-//    else { message = 'always welcome';}
-
-// document.write('<h1>' + message + '<h1>');
-
-
-var order = prompt('what type of language you want learn about');
-
-while (order !== "html" && order !== "css"){
-       order = prompt('please write only html or css');}
- 
-
-var lang = '';
-if (order === 'html') {
-   lang = '<img src="images/html.jpg"/>';
+ return document.write('<h1>' + message + '<h1>');
 }
-else if (order === 'css') {
-    lang = '<img src="images/css.jpg" width="250" />';  
-   }
+confirmingDependingOnAges();
 
 
-var result = '';
-var numOfPicLink = prompt('how many picture links do you want ');
-for (var i = 0; i < numOfPicLink; i++) {
-   console.log(i);
-   result = result + lang;
+
+var showImage = function(){
+    var order = prompt('what type of language you want learn about');
+
+    while (order !== "html" && order !== "css"){
+           order = prompt('please write only html or css');}
+     
+    
+    var lang = '';
+    if (order === 'html') {
+       lang = '<img src="images/html.jpg"/>';
+    }
+    else if (order === 'css') {
+        lang = '<img src="images/css.jpg" width="250" />';  
+       }
+    
+    
+    var result = '';
+    var numOfPicLink = prompt('how many picture links do you want ');
+    for (var i = 0; i < numOfPicLink; i++) {
+       console.log(i);
+       result = result + lang;
+    }
+    
+     return document.write(result);
 }
+showImage();
 
-document.write(result);
+
+
 
 //9
 // var i = 0;
