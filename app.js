@@ -8,7 +8,7 @@
 // alert('stay in touch with us')
 
 
-// next component will ask you about your email and age.
+/*next component will ask you about your email and age.*/
 
 // var yourName = prompt('what is your name');
 // alert('hello' + yourName);
@@ -31,8 +31,9 @@
 
 var order = prompt('what type of language you want learn about');
 
-while (order !== "html" && order !== "css")
-       order = prompt('please write only html or css')
+while (order !== "html" && order !== "css"){
+       order = prompt('please write only html or css');}
+ 
 
 var lang = '';
 if (order === 'html') {
@@ -47,14 +48,42 @@ var result = '';
 var numOfPicLink = prompt('how many picture links do you want ');
 for (var i = 0; i < numOfPicLink; i++) {
    console.log(i);
-   result = result + '<br>' + lang;
+   result = result + lang;
 }
 
 document.write(result);
 
+//9
+// var i = 0;
+// while( i < 10 ) {
+//   console.log(i);
+//   i++;
+// }
+// 5
+// var c = 'o';
+// while( c.length <= 20 ) {
+//   console.log( c );
+//   c = c + c;
+// }
+// 0 2 4 6  8 10 11
+// var i = 0;
+// while( i <= 10 ) {
+//   console.log(i++);
+//   i++;
+// }
+// frome 0 to 10 and 10
+// var i = 0;
+// while( i <= 10 ) {
+//   console.log(i);
+//   i++;
+// }
 
+// var i = 0;
+// while(i < 5){
 
-
+//     document.write('<br>'+'hello') 
+//     i++;
+// }
 
 
 
